@@ -60,15 +60,25 @@
         </main>
 </body>
 <script>
-    const botao = document.querySelectorAll("button");
+    const botoes = document.querySelector("button");
 
-    botoes.foreach
-    botao.addEventListener("click", botaoClicado);
-
-    function botaoClicado(){
-        console.log("fuiclicado");
-        let texto = botao.querySelector("span");
-        texto.textContent++;
-    }
+    botoes.foreach(function (botao){
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado(){
+            console.log("fuiclicado");
+            let texto = botao.querySelector("span");
+            let(curtiu === false){
+                texto.textContect++;
+                curtiu = true;
+            }
+            else{
+                texto.textContent--;
+                curtiu = false;
+            }
+            }
+        }
+    
+    )
 </script>
 </html>
