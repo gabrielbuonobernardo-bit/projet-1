@@ -57,15 +57,17 @@
                    <h2>obrigado a todos que acessaram o site</h2>
                 </div>
             </article>
-     <main>
+        </main>
 </body>
 <script>
-    const botao = queryselector("button");
-    botao.addeventlistener("click, botaoclicado");
+    const botao = document.querySelectorAll("button");
 
-    function botaoclicado(){
+    botoes.foreach
+    botao.addEventListener("click", botaoClicado);
+
+    function botaoClicado(){
         console.log("fuiclicado");
-        let texto = botao.queryselector("span");
+        let texto = botao.querySelector("span");
         texto.textContent++;
     }
 </script>
